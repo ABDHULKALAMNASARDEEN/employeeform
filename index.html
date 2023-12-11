@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Details</title>
+ 
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+
+  <h1><i>EMPLOYEE DETAILS</i></h1>
+
+  <div class="input-container">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+    </div>
+    <div>
+      <label for="employeeID">Employee ID:</label>
+      <input type="text" id="employeeID">
+    </div>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob">
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender">
+		<option> </option>
+        <option value="male" selected>Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="designation">Designation:</label>
+      <input type="text" id="designation">
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone">
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address">
+    </div>
+    <div>
+      <label for="joiningDate">Joining Date:</label>
+      <input type="date" id="joiningDate">
+    </div>
+    <div>
+      <label for="salary">Present Salary:</label>
+      <input type="text" id="salary" placeholder="300000">
+    </div>
+  </div>
+
+  <button onclick="addEmployee()">Add Employee</button>
+
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employee ID</th>
+        <th>Date of Birth</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Designation</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Joining Date</th>
+        <th>Experience</th>
+        <th>Present Salary</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+    </tbody>
+  </table>
+
+  <script src="script.js">
+   
+  </script>
+</body>
+</html>
